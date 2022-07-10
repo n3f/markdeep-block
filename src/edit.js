@@ -41,10 +41,7 @@ export default function Edit( {attributes} ) {
 	debugger;
 	return (
 		<pre { ...blockProps }>
-			{ __(
-				'Markdeep Block – hello from the editor!',
-				'markdeep-block'
-			) }
+			{ content }
 		</pre>
 	);
 }

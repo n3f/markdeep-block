@@ -1,3 +1,3 @@
 window.markdeepOptions = {
-	mode: 'script',
+	mode: window.wp ? 'script' : 'html',
 };

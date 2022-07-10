@@ -24,8 +24,8 @@ import { useBlockProps } from '@wordpress/block-editor';
  */
 export default function save( {attributes} ) {
 	const content = attributes.content;
-	const blockProps = useBlockProps.save();
-	console.log( 'save', blockProps );
+	const blockProps = useBlockProps.save({ className: 'markdeep'});
+	console.log( 'save', content, blockProps );
 	return (
 		<pre { ...blockProps }>
 			{ 'hey you guys' }

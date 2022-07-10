@@ -34,3 +34,8 @@ function markdeep_block_init() {
 	register_block_type( __DIR__ . '/build' );
 }
 add_action( 'init', 'markdeep_block_init' );
+
+function enqueue_markdeep() {
+	wp_enqueue_script( 'markdeep' );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_markdeep' );

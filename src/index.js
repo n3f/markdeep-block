@@ -45,8 +45,8 @@ registerBlockType( metadata.name, {
 		content: {
 			type: 'string',
 			source: 'text',
-			selector: 'pre.markdeep'
-			// default: `hello <a href=''>test</a>`
+			selector: 'pre.markdeep',
+			default: `hello <a href=''>test</a>`
 		}
 	},
 	supports: {
