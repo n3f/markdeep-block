@@ -2,10 +2,9 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
   "name": "markdeep-block/markdeep-block",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "title": "Markdeep Block",
   "category": "widgets",
-  "icon": "smiley",
   "description": "Markdeep Block is a WordPress plugin for adding Gutenberg blocks supporting Markdeep syntax.",
   "supports": {
     "html": false

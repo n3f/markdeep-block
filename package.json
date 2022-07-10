@@ -1,9 +1,9 @@
 {
 	"name": "markdeep-block",
-	"version": "0.1.0",
+	"version": "0.0.1",
 	"description": "Markdeep Block is a WordPress plugin for adding Gutenberg blocks supporting Markdeep syntax.",
-	"author": "The WordPress Contributors",
-	"license": "GPL-2.0-or-later",
+	"author": "neffff",
+	"license": "GPL-3.0",
 	"main": "build/index.js",
 	"scripts": {
 		"build": "wp-scripts build",

@@ -22,6 +22,11 @@ import { useBlockProps } from '@wordpress/block-editor';
 import './editor.scss';
 
 /**
+ * Add external Markdeep dependencies
+ */
+ import * as markdeep from 'markdeep';
+
+/**
  * The edit function describes the structure of your block in the context of the
  * editor. This represents what the editor will render when the block is used.
  *
@@ -29,13 +34,17 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit() {
+export default function Edit( {attributes} ) {
+	const content = attributes.content;
+	console.log('edit', content);
+	const blockProps = useBlockProps({className: 'markdeep'});
+	debugger;
 	return (
-		<p { ...useBlockProps() }>
+		<pre { ...blockProps }>
 			{ __(
 				'Markdeep Block – hello from the editor!',
 				'markdeep-block'
 			) }
-		</p>
+		</pre>
 	);
 }

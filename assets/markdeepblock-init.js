@@ -1,0 +1,3 @@
+window.markdeepOptions = {
+	mode: 'script',
+};
