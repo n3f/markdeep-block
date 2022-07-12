@@ -6,7 +6,8 @@
  * Requires at least: 5.9
  * Requires PHP:      7.0
  * Version:           0.0.1
- * Author:            <a href="https://n3f.com">neffff | n3f</a>
+ * Author:            neffff
+ * Author URI:        https://n3f.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       markdeep-block
