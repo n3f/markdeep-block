@@ -1,10 +1,10 @@
 === Markdeep Block ===
-Contributors:      The WordPress Contributors
-Tags:              block
+Contributors:      neffff
+Tags:              markdown, markdeep, diagrams, graphics, mathjax, latex, block
 Tested up to:      6.0
-Stable tag:        0.1.0
-License:           GPL-2.0-or-later
-License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+Stable tag:        0.0.1
+License:           GPL-3.0
+License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
 Markdeep Block is a WordPress plugin for adding Gutenberg blocks supporting Markdeep syntax.
 
@@ -45,7 +45,7 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 
 == Changelog ==
 
-= 0.1.0 =
+= 0.0.1 =
 * Release
 
 == Arbitrary section ==
