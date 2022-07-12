@@ -1,6 +1,7 @@
 <?php
 /**
  * Plugin Name:       Markdeep Block
+ * Plugin URI:        https://github.com/n3f/markdeep-block
  * Description:       Markdeep Block is a WordPress plugin for adding Gutenberg blocks supporting <a href="http://casual-effects.com/markdeep">Markdeep</a> syntax.
  * Requires at least: 5.9
  * Requires PHP:      7.0
