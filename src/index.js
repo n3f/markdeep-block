@@ -46,11 +46,11 @@ registerBlockType( metadata.name, {
 			type: 'string',
 			source: 'text',
 			selector: 'pre.markdeep',
-			default: `hello <a href=''>test</a>`
-		}
+			default: `hello <a href=''>test</a>`,
+		},
 	},
 	supports: {
-		html: false
+		html: false,
 	},
 
 	/**

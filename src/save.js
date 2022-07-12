@@ -22,13 +22,9 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @return {WPElement} Element to render.
  */
-export default function save( {attributes} ) {
+export default function save( { attributes } ) {
 	const content = attributes.content;
-	const blockProps = useBlockProps.save({ className: 'markdeep'});
-	console.log( 'save', content, blockProps );
-	return (
-		<pre { ...blockProps }>
-			{ 'hey you guys' }
-		</pre>
-	);
+	const blockProps = useBlockProps.save( { className: 'markdeep' } );
+	// console.log( 'save', content, blockProps );
+	return <pre { ...blockProps }>{ content }</pre>;
 }

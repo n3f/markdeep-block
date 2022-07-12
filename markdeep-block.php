@@ -30,11 +30,17 @@ define( 'MARKDEEPBLOCK_VERSION', '0.0.1' );
  */
 function markdeep_block_init() {
 	wp_register_script( 'markdeepblock-init', plugin_dir_url( __FILE__ ) . 'assets/markdeepblock-init.js', [], MARKDEEPBLOCK_VERSION, true );
+	// wp_register_script( 'mathjax', 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js', [], true );
 	wp_register_script( 'markdeep', plugin_dir_url( __FILE__ ) . 'assets/markdeep.min.js', [ 'markdeepblock-init' ], MARKDEEP_VERSION, true );
 	register_block_type( __DIR__ . '/build' );
 }
 add_action( 'init', 'markdeep_block_init' );
 
+/**
+ * Load markdeep JS for non-editor contexts.
+ *
+ * The editor loading is handled via `register_block_type()` in `markdeep_block_init()`.
+ */
 function enqueue_markdeep() {
 	wp_enqueue_script( 'markdeep' );
 }

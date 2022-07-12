@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { PlainText, useBlockProps } from '@wordpress/block-editor';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -21,10 +21,8 @@ import { useBlockProps } from '@wordpress/block-editor';
  */
 import './editor.scss';
 
-/**
- * Add external Markdeep dependencies
- */
- import * as markdeep from 'markdeep';
+import { MarkdeepPreview } from './markdeep-preview';
+import { withInstanceId } from '@wordpress/compose';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -34,14 +32,24 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit( {attributes} ) {
-	const content = attributes.content;
-	console.log('edit', content);
-	const blockProps = useBlockProps({className: 'markdeep'});
-	debugger;
-	return (
-		<pre { ...blockProps }>
-			{ content }
-		</pre>
-	);
-}
+const Edit = withInstanceId(
+	( { attributes, setAttributes, isSelected, instanceId } ) => {
+		const { content } = attributes;
+		const updateContent = ( content ) => {
+			setAttributes( { content } );
+		};
+
+		// console.log('edit', content);
+		// debugger;
+		return (
+			<div { ...useBlockProps() }>
+				{ isSelected && (
+					<PlainText value={ content } onChange={ updateContent } />
+				) }
+				<MarkdeepPreview id={ instanceId } content={ content } />
+			</div>
+		);
+	}
+);
+
+export default Edit;
