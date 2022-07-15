@@ -41,6 +41,10 @@ add_filter( 'markdeepblock_mathjax_url', fn($u) => 'https://cdn.jsdelivr.net/npm
 * Markdeep specific LaTeX/MathJax commands. (e.g. θ₀, θ₁, etc.)
 * Optional Table of Contents (currently suppressed)
 
+### Logo
+
+The logo is derived from [Dustin Curtis's](https://dustincurtis.com) https://github.com/dcurtis/markdown-mark.
+
 == Installation ==
 
 This plugin can be installed through the normal processes: the WordPress plugin directory, (hopefully) the WordPress block
