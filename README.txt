@@ -12,31 +12,46 @@ Markdeep Block is a WordPress plugin for adding Gutenberg blocks supporting Mark
 
 == Description ==
 
-> Markdeep is ideal for design documents, specifications, README files, code documentation, lab reports, blogs, and technical web pages. Because the source is plain text, Markdeep works well with software development toolchains.
-> -- http://casual-effects.com/markdeep/
+> "Markdeep is ideal for design documents, specifications, README files, code documentation, lab reports, blogs, and technical web pages. Because the source is plain text, Markdeep works well with software development toolchains."
+>  -- http://casual-effects.com/markdeep/
 
-> Markdeep is a text formatting syntax that extends Markdown, and a JavaScript program for making it work in browsers. The two most powerful features are its ability to run in any web browser on the client side and the inclusion of diagrams.
-> -- https://casual-effects.com/markdeep/features.md.html
+> "Markdeep is a text formatting syntax that extends Markdown, and a JavaScript program for making it work in browsers. The two most powerful features are its ability to run in any web browser on the client side and the inclusion of diagrams."
+>  -- https://casual-effects.com/markdeep/features.md.html
 
-This plugin adds a gutenberg block supporting the [markdeep](http://casual-effects.com/markdeep/) language. The editor will show both a plaintext
-environment for composing the text, and a preview area to show what the interpreted block will look like.
+This plugin adds a gutenberg block supporting the [markdeep](http://casual-effects.com/markdeep/) language. The editor shows both a plaintext
+area for composing the text, and a preview area to display the rendered block.
 
 ### MathJax & CDN
 
-In order to support MathJax features, the MathJax library is loaded from an external CDN (cdnjs/cloudflare). The CDN can be changed with a one-line
-script.  (Alternately use the WordPress plugin file editor to uncomment a similar line in `markdeep-block.php`). _In the future this should be an
-exposed configuration option._
+In order to support [MathJax][mj] features, the MathJax library is loaded from an external [CDN (cdnjs/cloudflare)](https://cdnjs.cloudflare.com/).
+
+> MathJax.org does not collect, maintain, distribute, purchase, or sell personal data of any kind, and uses no cookies or other tracking
+> or advertising techniques.
+>
+> Likewise, the MathJax software does not track you, and uses local storage only to maintain your preferences as set by the MathJax contextual menu.
+>
+> -- https://www.mathjax.org/#privacy-statement
+
+If you do not change the CDN you will be subject to cloudflare's [terms][] & [privacy policy][].
+
+This CDN can be changed with a one-line script.  (Alternately, use the WordPress plugin file editor to uncomment a similar line in
+`markdeep-block.php`). _In the future this should be an exposed configuration option._
 
 To override the CDN use:
 
 ```php
-// Markdeep currently uses 2.7.6
+// Markdeep currently uses version 2.7.6
 add_filter( 'markdeepblock_mathjax_url', fn($u) => 'https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML' );
 ```
+
+[mj]: https://www.mathjax.org/
+[terms]: https://www.cloudflare.com/website-terms/
+[privacy policy]: https://www.cloudflare.com/privacypolicy/
 
 ### Planned features
 
 * UI to configure CDN for JS resources (Markdeep, MathJax).
+* Configurable style per block.
 * Get MathJax commands working in editor. _(MathJax currently works in posts)._
 * Markdeep specific LaTeX/MathJax commands. (e.g. θ₀, θ₁, etc.)
 * Optional Table of Contents (currently suppressed)
