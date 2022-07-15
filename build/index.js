@@ -205,7 +205,7 @@ class MarkdeepPreview extends _wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Co
     let content = props.content;
 
     try {
-      const html = markdeep__WEBPACK_IMPORTED_MODULE_1__.format(content, false);
+      const html = markdeep__WEBPACK_IMPORTED_MODULE_1__.format(content);
       return {
         content: html,
         error: false
