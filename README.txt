@@ -21,10 +21,23 @@ Markdeep Block is a WordPress plugin for adding Gutenberg blocks supporting Mark
 This plugin adds a gutenberg block supporting the [markdeep](http://casual-effects.com/markdeep/) language. The editor will show both a plaintext
 environment for composing the text, and a preview area to show what the interpreted block will look like.
 
+### MathJax & CDN
+
+In order to support MathJax features, the MathJax library is loaded from an external CDN (cdnjs/cloudflare). The CDN can be changed with a one-line
+script.  (Alternately use the WordPress plugin file editor to uncomment a similar line in `markdeep-block.php`). _In the future this should be an
+exposed configuration option._
+
+To override the CDN use:
+
+```php
+// Markdeep currently uses 2.7.6
+add_filter( 'markdeepblock_mathjax_url', fn($u) => 'https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML' );
+```
+
 ### Planned features
 
-* Optionally use CDN for JS resources (Markdeep, MathJax).
-* Get MathJax commands working.
+* UI to configure CDN for JS resources (Markdeep, MathJax).
+* Get MathJax commands working in editor. _(MathJax currently works in posts)._
 * Markdeep specific LaTeX/MathJax commands. (e.g. θ₀, θ₁, etc.)
 * Optional Table of Contents (currently suppressed)
 
