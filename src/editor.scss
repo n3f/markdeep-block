@@ -9,6 +9,8 @@
 	.block-editor-plain-text {
 		font-family: monospace;
 	}
+
+	counter-reset: h1 h2 h3 h4 h5 h6 paragraph line item list-item;
 }
 
 /**
@@ -22,10 +24,6 @@
 		-webkit-print-color-adjust: exact;
 		text-shadow: none !important;
 	}
-}
-
-body {
-	counter-reset: h1 h2 h3 paragraph line item list-item;
 }
 
 @page {
