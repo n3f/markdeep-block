@@ -4990,7 +4990,7 @@ if (! window.alreadyProcessedMarkdeep) {
     // inline equations:
     //
     // 'config=TeX-MML-AM_SVG'
-    var MATHJAX_URL = window.MATHJAX_URL;
+    var MATHJAX_URL = window.MDPB_MATHJAX_URL;
 
     var loadMathJax = function() {
         // Dynamically load mathjax

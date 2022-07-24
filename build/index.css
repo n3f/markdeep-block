@@ -1,1 +1,691 @@
-.wp-block-markdeep-block-markdeep-block{counter-reset:h1 h2 h3 h4 h5 h6 paragraph line item list-item}.wp-block-markdeep-block-markdeep-block .block-editor-plain-text{font-family:monospace}@media print{*{-webkit-print-color-adjust:exact;text-shadow:none!important}}@page{size:auto;margin:0}.wp-block-markdeep-block-markdeep-block>div #mdContextMenu{background:#383838;border:1px solid #999;border-radius:4px;box-shadow:0 3px 10px rgba(0,0,0,.35);color:#fff;cursor:default;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Helvetica Neue,sans-serif;font-size:85%;font-weight:600;padding:4px 0;position:absolute}.wp-block-markdeep-block-markdeep-block>div #mdContextMenu div{padding:0 20px}.wp-block-markdeep-block-markdeep-block>div #mdContextMenu div:hover{background:#1659d1}.wp-block-markdeep-block-markdeep-block>div .md code,.wp-block-markdeep-block-markdeep-block>div .md pre{font-family:Menlo,Consolas,monospace;font-size:85%;line-height:140%;text-align:left}.wp-block-markdeep-block-markdeep-block>div .md .mediumToc code,.wp-block-markdeep-block-markdeep-block>div .md .shortToc code,.wp-block-markdeep-block-markdeep-block>div .md h1 code,.wp-block-markdeep-block-markdeep-block>div .md h2 code,.wp-block-markdeep-block-markdeep-block>div .md h3 code,.wp-block-markdeep-block-markdeep-block>div .md h4 code,.wp-block-markdeep-block-markdeep-block>div .md h5 code,.wp-block-markdeep-block-markdeep-block>div .md h6 code,.wp-block-markdeep-block-markdeep-block>div .md longToc code{font-size:unset}.wp-block-markdeep-block-markdeep-block>div .md div.title{font-size:26px;font-weight:800;line-height:120%;text-align:center}.wp-block-markdeep-block-markdeep-block>div .md div.afterTitles{height:10px}.wp-block-markdeep-block-markdeep-block>div .md div.subtitle{text-align:center}.wp-block-markdeep-block-markdeep-block>div .md iframe.textinsert,.wp-block-markdeep-block-markdeep-block>div .md iframe:not(.markdeep),.wp-block-markdeep-block-markdeep-block>div .md object.textinsert{background:#f5f5f4;border:1px solid #000;border-radius:4px;display:block;height:75vh;margin-bottom:10px;margin-top:10px;width:100%}.wp-block-markdeep-block-markdeep-block>div .md .image{display:inline-block}.wp-block-markdeep-block-markdeep-block>div .md img{max-width:100%;page-break-inside:avoid}.wp-block-markdeep-block-markdeep-block>div .md li{text-align:left;text-indent:0}.wp-block-markdeep-block-markdeep-block>div .md pre.listing{counter-reset:line;overflow-x:auto;resize:horizontal;tab-size:4;-moz-tab-size:4;-o-tab-size:4;width:100%}.wp-block-markdeep-block-markdeep-block>div .md pre.listing .linenumbers span.line:before{color:#ccc;content:counter(line);counter-increment:line;display:inline-block;font-size:80%;margin-left:-28px;margin-right:8px;padding-right:13px;text-align:right;width:30px}.wp-block-markdeep-block-markdeep-block>div .md div.tilde{margin:20px 0 -10px;text-align:center}.wp-block-markdeep-block-markdeep-block>div .md .imagecaption,.wp-block-markdeep-block-markdeep-block>div .md .listingcaption,.wp-block-markdeep-block-markdeep-block>div .md .tablecaption{display:inline-block;font-style:italic;margin:7px 5px 12px;text-align:justify}.wp-block-markdeep-block-markdeep-block>div .md img.pixel{image-rendering:-moz-crisp-edges;image-rendering:pixelated}.wp-block-markdeep-block-markdeep-block>div .md blockquote.fancyquote{line-height:160%;margin:25px 0;text-align:left}.wp-block-markdeep-block-markdeep-block>div .md blockquote.fancyquote:before{color:#ddd;content:"“";font-family:Times New Roman;font-size:45px;line-height:0;margin-right:6px;vertical-align:-.3em}.wp-block-markdeep-block-markdeep-block>div .md span.fancyquote{color:#777;font-size:118%;font-style:italic}.wp-block-markdeep-block-markdeep-block>div .md span.fancyquote:after{color:#ddd;content:"”";font-family:Times New Roman;font-size:45px;font-style:normal;line-height:0;margin-left:6px;vertical-align:-.3em}.wp-block-markdeep-block-markdeep-block>div .md blockquote.fancyquote .author{display:inline-block;margin-top:10px;text-align:right;width:100%}.wp-block-markdeep-block-markdeep-block>div .md small{font-size:60%}.wp-block-markdeep-block-markdeep-block>div .md big{font-size:150%}.wp-block-markdeep-block-markdeep-block>div .md .mediumTOC,.wp-block-markdeep-block-markdeep-block>div .md .shortTOC,.wp-block-markdeep-block-markdeep-block>div .md .tocHeader,.wp-block-markdeep-block-markdeep-block>div .md div.title,.wp-block-markdeep-block-markdeep-block>div .md h1,.wp-block-markdeep-block-markdeep-block>div .md h2,.wp-block-markdeep-block-markdeep-block>div .md h3,.wp-block-markdeep-block-markdeep-block>div .md h4,.wp-block-markdeep-block-markdeep-block>div .md h5,.wp-block-markdeep-block-markdeep-block>div .md h6,.wp-block-markdeep-block-markdeep-block>div .nonumberh1,.wp-block-markdeep-block-markdeep-block>div .nonumberh2,.wp-block-markdeep-block-markdeep-block>div .nonumberh3,.wp-block-markdeep-block-markdeep-block>div .nonumberh4,.wp-block-markdeep-block-markdeep-block>div .nonumberh5,.wp-block-markdeep-block-markdeep-block>div .nonumberh6,.wp-block-markdeep-block-markdeep-block>div contents{border-top:none;clear:both;font-family:Verdana,Helvetica,Arial,sans-serif;margin:13.4px 0;padding:15px 0 3px}.wp-block-markdeep-block-markdeep-block>div .md .tocTop{display:none}.wp-block-markdeep-block-markdeep-block>div .md .nonumberh1,.wp-block-markdeep-block-markdeep-block>div .md .nonumberh2,.wp-block-markdeep-block-markdeep-block>div .md .nonumberh3,.wp-block-markdeep-block-markdeep-block>div .md .nonumberh4,.wp-block-markdeep-block-markdeep-block>div .md .nonumberh5,.wp-block-markdeep-block-markdeep-block>div .md .nonumberh6,.wp-block-markdeep-block-markdeep-block>div .md h1,.wp-block-markdeep-block-markdeep-block>div .md h2,.wp-block-markdeep-block-markdeep-block>div .md h3,.wp-block-markdeep-block-markdeep-block>div .md h4,.wp-block-markdeep-block-markdeep-block>div .md h5,.wp-block-markdeep-block-markdeep-block>div .md h6{-moz-column-break-after:avoid;break-after:avoid;page-break-after:avoid}.wp-block-markdeep-block-markdeep-block>div .md svg.diagram{stroke-linecap:round;stroke-width:2px;stroke:#000;fill:#000;display:block;font-family:Menlo,Consolas,monospace;font-size:85%;page-break-inside:avoid;text-align:center}.wp-block-markdeep-block-markdeep-block>div .md svg.diagram .opendot{fill:#fff}.wp-block-markdeep-block-markdeep-block>div .md svg.diagram .shadeddot{fill:#ccc}.wp-block-markdeep-block-markdeep-block>div .md svg.diagram .dotteddot{stroke:#000;stroke-dasharray:4;fill:none}.wp-block-markdeep-block-markdeep-block>div .md svg.diagram text{stroke:none}@media print{@page{.wp-block-markdeep-block-markdeep-block>div{margin:1in 5mm;transform:scale(150%)}}}@media print{.wp-block-markdeep-block-markdeep-block>div .md .pagebreak{page-break-after:always;visibility:hidden}}.wp-block-markdeep-block-markdeep-block>div .md a{font-family:Georgia,Palatino,Times New Roman}.wp-block-markdeep-block-markdeep-block>div .md .nonumberh1,.wp-block-markdeep-block-markdeep-block>div .md .tocHeader,.wp-block-markdeep-block-markdeep-block>div .md h1{border-bottom:3px solid;font-size:20px;font-weight:700}.wp-block-markdeep-block-markdeep-block>div .md .nonumberh1,.wp-block-markdeep-block-markdeep-block>div .md h1{counter-reset:h2 h3 h4 h5 h6}.wp-block-markdeep-block-markdeep-block>div .md .nonumberh2,.wp-block-markdeep-block-markdeep-block>div .md h2{border-bottom:2px solid #999;color:#555;counter-reset:h3 h4 h5 h6;font-size:18px;font-weight:700}.wp-block-markdeep-block-markdeep-block>div .md .nonumberh3,.wp-block-markdeep-block-markdeep-block>div .md .nonumberh4,.wp-block-markdeep-block-markdeep-block>div .md .nonumberh5,.wp-block-markdeep-block-markdeep-block>div .md .nonumberh6,.wp-block-markdeep-block-markdeep-block>div .md h3,.wp-block-markdeep-block-markdeep-block>div .md h4,.wp-block-markdeep-block-markdeep-block>div .md h5,.wp-block-markdeep-block-markdeep-block>div .md h6{color:#555;font-family:Verdana,Helvetica,Arial,sans-serif;font-size:16px}.wp-block-markdeep-block-markdeep-block>div .md h3{counter-reset:h4 h5 h6}.wp-block-markdeep-block-markdeep-block>div .md h4{counter-reset:h5 h6}.wp-block-markdeep-block-markdeep-block>div .md h5{counter-reset:h6}.wp-block-markdeep-block-markdeep-block>div .md div.table{margin:16px 0}.wp-block-markdeep-block-markdeep-block>div .md table{border-collapse:collapse;line-height:140%;page-break-inside:avoid}.wp-block-markdeep-block-markdeep-block>div .md table.table{margin:auto}.wp-block-markdeep-block-markdeep-block>div .md table.calendar{font-family:Verdana,Helvetica,Arial,sans-serif;font-size:11px;margin:auto;width:100%}.wp-block-markdeep-block-markdeep-block>div .md table.calendar th{font-size:16px}.wp-block-markdeep-block-markdeep-block>div .md .today{background:#ecf8fa}.wp-block-markdeep-block-markdeep-block>div .md .calendar .parenthesized{color:#999;font-style:italic}.wp-block-markdeep-block-markdeep-block>div .md table.table th{background-color:#aaa;border:1px solid #888;color:#fff;padding:8px 15px}.wp-block-markdeep-block-markdeep-block>div .md table.table td{border:1px solid #888;padding:5px 15px}.wp-block-markdeep-block-markdeep-block>div .md table.table tr:nth-child(2n){background:#eee}.wp-block-markdeep-block-markdeep-block>div .md pre.tilde{background:#fcfcfc;border-bottom:1px solid #ccc;border-top:1px solid #ccc;margin:0;padding:5px 0 5px 20px;page-break-inside:avoid}.wp-block-markdeep-block-markdeep-block>div .md a.target{display:inline-block;font-size:0;height:0;visibility:hidden;width:0}.wp-block-markdeep-block-markdeep-block>div .md a:link,.wp-block-markdeep-block-markdeep-block>div .md a:visited{color:#38a;text-decoration:none}.wp-block-markdeep-block-markdeep-block>div .md a:link:hover{text-decoration:underline}.wp-block-markdeep-block-markdeep-block>div .md dt{font-weight:700}.wp-block-markdeep-block-markdeep-block>div .md dl>dd{margin-bottom:8px;margin-top:-8px}.wp-block-markdeep-block-markdeep-block>div .md dl>table{margin:35px 0 30px}.wp-block-markdeep-block-markdeep-block>div .md code{page-break-inside:avoid}@media print{.wp-block-markdeep-block-markdeep-block>div .md .listing code{white-space:pre-wrap}}.wp-block-markdeep-block-markdeep-block>div .md .endnote{font-size:13px;line-height:15px;padding-left:10px;text-indent:-10px}.wp-block-markdeep-block-markdeep-block>div .md .bib{padding-left:80px;text-align:left;text-indent:-80px}.wp-block-markdeep-block-markdeep-block>div .markdeepFooter{color:#999;font-size:9px;padding-top:80px;text-align:right}.wp-block-markdeep-block-markdeep-block>div .md .mediumTOC{border-left:1px solid #ccc;float:right;font-size:12px;line-height:15px;margin:15px 0 15px 25px;padding-left:15px}.wp-block-markdeep-block-markdeep-block>div .md .mediumTOC .level1{font-weight:600}.wp-block-markdeep-block-markdeep-block>div .md .longTOC .level1{display:block;font-weight:600;margin:0 0 -20px;padding-top:12px}.wp-block-markdeep-block-markdeep-block>div .md .shortTOC{font-size:14px;font-weight:700;margin-top:15px;text-align:center}.wp-block-markdeep-block-markdeep-block>div .md .admonition{background-color:rgba(68,138,255,.15);border-left:2.5rem solid rgba(68,138,255,.4);border-radius:.2rem;margin:1em 0;padding:.4rem 1rem;position:relative}.wp-block-markdeep-block-markdeep-block>div .md .admonition-title{border-bottom:1px solid;border-color:rgba(68,138,255,.4);font-weight:700;margin-bottom:4px;margin-left:-1rem;margin-right:-1rem;padding-bottom:4px;padding-left:1rem}.wp-block-markdeep-block-markdeep-block>div .md .admonition.tip{background-color:rgba(50,255,90,.15);border-left:2.5rem solid rgba(50,255,90,.4)}.wp-block-markdeep-block-markdeep-block>div .md .admonition.tip:before{color:rgba(26,128,46,.8);content:"ⓘ";display:block;font-size:200%;font-weight:700;height:0;left:-2.95rem;position:relative;top:3px;width:0}.wp-block-markdeep-block-markdeep-block>div .md .admonition.tip>.admonition-title{border-color:rgba(50,255,90,.4)}.wp-block-markdeep-block-markdeep-block>div .md .admonition.warn,.wp-block-markdeep-block-markdeep-block>div .md .admonition.warning{background-color:rgba(255,145,0,.15);border-left:2.5rem solid rgba(255,145,0,.4)}.wp-block-markdeep-block-markdeep-block>div .md .admonition.warn:before,.wp-block-markdeep-block-markdeep-block>div .md .admonition.warning:before{color:rgba(128,73,0,.8);content:"⚠";display:block;font-weight:700;height:0;left:-2.95rem;position:relative;top:2px;width:0}.wp-block-markdeep-block-markdeep-block>div .md .admonition.warn>.admonition-title,.wp-block-markdeep-block-markdeep-block>div .md .admonition.warning>.admonition-title{border-color:rgba(255,145,0,.4)}.wp-block-markdeep-block-markdeep-block>div .md .admonition.error{background-color:rgba(255,23,68,.15);border-left:2.5rem solid rgba(255,23,68,.4)}.wp-block-markdeep-block-markdeep-block>div .md .admonition.error>.admonition-title{border-color:rgba(255,23,68,.4)}.wp-block-markdeep-block-markdeep-block>div .md .admonition.error:before{color:rgba(128,12,34,.8);content:"☒";display:block;font-family:Arial;font-size:150%;height:0;left:-3rem;position:relative;top:-2px;width:0}.wp-block-markdeep-block-markdeep-block>div .md .admonition p:last-child{margin-bottom:0}.wp-block-markdeep-block-markdeep-block>div .md li.checked,.wp-block-markdeep-block-markdeep-block>div .md li.unchecked{list-style:none;overflow:visible;text-indent:-1.2em}.wp-block-markdeep-block-markdeep-block>div .md li.checked:before,.wp-block-markdeep-block-markdeep-block>div .md li.unchecked:before{content:"☑";display:block;float:left;font-size:120%;width:1em}.wp-block-markdeep-block-markdeep-block>div .md li.unchecked:before{content:"☐"}.wp-block-markdeep-block-markdeep-block>div .md h1:before{content:counter(h1) " ";counter-increment:h1;margin-right:10px}.wp-block-markdeep-block-markdeep-block>div .md h2:before{content:counter(h1) "." counter(h2) " ";counter-increment:h2;margin-right:10px}.wp-block-markdeep-block-markdeep-block>div .md h3:before{content:counter(h1) "." counter(h2) "." counter(h3) " ";counter-increment:h3;margin-right:10px}.wp-block-markdeep-block-markdeep-block>div .md h4:before{content:counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) " ";counter-increment:h4;margin-right:10px}.wp-block-markdeep-block-markdeep-block>div .md h5:before{content:counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) " ";counter-increment:h5;margin-right:10px}.wp-block-markdeep-block-markdeep-block>div .md h6:before{content:counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) " ";counter-increment:h6;margin-right:10px}.wp-block-markdeep-block-markdeep-block>div .hljs{-webkit-text-size-adjust:none;background:#fff;color:#000;display:block;overflow-x:auto;padding:.5em}.wp-block-markdeep-block-markdeep-block>div .hljs-comment{color:#006a00}.wp-block-markdeep-block-markdeep-block>div .hljs-keyword{color:#02e}.wp-block-markdeep-block-markdeep-block>div .hljs-literal,.wp-block-markdeep-block-markdeep-block>div .nginx .hljs-title{color:#aa0d91}.wp-block-markdeep-block-markdeep-block>div .hljs-list .hljs-title,.wp-block-markdeep-block-markdeep-block>div .hljs-name,.wp-block-markdeep-block-markdeep-block>div .hljs-request,.wp-block-markdeep-block-markdeep-block>div .hljs-status,.wp-block-markdeep-block-markdeep-block>div .hljs-tag .hljs-title,.wp-block-markdeep-block-markdeep-block>div .hljs-winutils,.wp-block-markdeep-block-markdeep-block>div .http .hljs-title,.wp-block-markdeep-block-markdeep-block>div .method,.wp-block-markdeep-block-markdeep-block>div .setting .hljs-value,.wp-block-markdeep-block-markdeep-block>div .tex .hljs-command{color:#008}.wp-block-markdeep-block-markdeep-block>div .hljs-envvar,.wp-block-markdeep-block-markdeep-block>div .tex .hljs-special{color:#660}.wp-block-markdeep-block-markdeep-block>div .hljs-string{color:#c41a16}.wp-block-markdeep-block-markdeep-block>div .apache .hljs-cbracket,.wp-block-markdeep-block-markdeep-block>div .hljs-attr_selector,.wp-block-markdeep-block-markdeep-block>div .hljs-cdata,.wp-block-markdeep-block-markdeep-block>div .hljs-date,.wp-block-markdeep-block-markdeep-block>div .hljs-filter .hljs-argument,.wp-block-markdeep-block-markdeep-block>div .hljs-regexp,.wp-block-markdeep-block-markdeep-block>div .hljs-tag .hljs-value{color:#080}.wp-block-markdeep-block-markdeep-block>div .coffeescript .hljs-attribute,.wp-block-markdeep-block-markdeep-block>div .css .hljs-function,.wp-block-markdeep-block-markdeep-block>div .hljs-decorator,.wp-block-markdeep-block-markdeep-block>div .hljs-function .hljs-title,.wp-block-markdeep-block-markdeep-block>div .hljs-hexcolor,.wp-block-markdeep-block-markdeep-block>div .hljs-number,.wp-block-markdeep-block-markdeep-block>div .hljs-pi,.wp-block-markdeep-block-markdeep-block>div .hljs-prompt,.wp-block-markdeep-block-markdeep-block>div .hljs-rule .hljs-value,.wp-block-markdeep-block-markdeep-block>div .hljs-shebang,.wp-block-markdeep-block-markdeep-block>div .hljs-sub .hljs-identifier,.wp-block-markdeep-block-markdeep-block>div .hljs-symbol,.wp-block-markdeep-block-markdeep-block>div .hljs-symbol .hljs-string,.wp-block-markdeep-block-markdeep-block>div .hljs-tag,.wp-block-markdeep-block-markdeep-block>div .hljs-tag .hljs-keyword,.wp-block-markdeep-block-markdeep-block>div .ini .hljs-title{color:#a0c}.wp-block-markdeep-block-markdeep-block>div .hljs-function .hljs-title{color:#000;font-weight:700}.wp-block-markdeep-block-markdeep-block>div .clojure .hljs-attribute,.wp-block-markdeep-block-markdeep-block>div .hljs-built_in,.wp-block-markdeep-block-markdeep-block>div .hljs-class .hljs-id,.wp-block-markdeep-block-markdeep-block>div .hljs-class .hljs-title,.wp-block-markdeep-block-markdeep-block>div .hljs-doctype,.wp-block-markdeep-block-markdeep-block>div .hljs-params,.wp-block-markdeep-block-markdeep-block>div .hljs-tag .hljs-attribute,.wp-block-markdeep-block-markdeep-block>div .hljs-type,.wp-block-markdeep-block-markdeep-block>div .hljs-typename,.wp-block-markdeep-block-markdeep-block>div .setting,.wp-block-markdeep-block-markdeep-block>div .smalltalk .hljs-class{color:#5c2699}.wp-block-markdeep-block-markdeep-block>div .hljs-variable{color:#3f6e74}.wp-block-markdeep-block-markdeep-block>div .css .hljs-tag,.wp-block-markdeep-block-markdeep-block>div .hljs-pseudo,.wp-block-markdeep-block-markdeep-block>div .hljs-rule .hljs-property,.wp-block-markdeep-block-markdeep-block>div .hljs-subst{color:#000}.wp-block-markdeep-block-markdeep-block>div .css .hljs-class,.wp-block-markdeep-block-markdeep-block>div .css .hljs-id{color:#9b703f}.wp-block-markdeep-block-markdeep-block>div .hljs-value .hljs-important{color:#f70;font-weight:700}.wp-block-markdeep-block-markdeep-block>div .hljs-rule .hljs-keyword{color:#c5af75}.wp-block-markdeep-block-markdeep-block>div .apache .hljs-sqbracket,.wp-block-markdeep-block-markdeep-block>div .hljs-annotation,.wp-block-markdeep-block-markdeep-block>div .nginx .hljs-built_in{color:#9b859d}.wp-block-markdeep-block-markdeep-block>div .hljs-pragma,.wp-block-markdeep-block-markdeep-block>div .hljs-preprocessor,.wp-block-markdeep-block-markdeep-block>div .hljs-preprocessor *{color:#643820}.wp-block-markdeep-block-markdeep-block>div .tex .hljs-formula{background-color:#eee;font-style:italic}.wp-block-markdeep-block-markdeep-block>div .diff .hljs-header,.wp-block-markdeep-block-markdeep-block>div .hljs-chunk{color:gray;font-weight:700}.wp-block-markdeep-block-markdeep-block>div .diff .hljs-change{background-color:#bccff9}.wp-block-markdeep-block-markdeep-block>div .hljs-addition{background-color:#baeeba}.wp-block-markdeep-block-markdeep-block>div .hljs-deletion{background-color:#ffc8bd}.wp-block-markdeep-block-markdeep-block>div .hljs-comment .hljs-doctag{font-weight:700}.wp-block-markdeep-block-markdeep-block>div .method .hljs-id{color:#000}
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-markdeep-block-markdeep-block {
+  counter-reset: h1 h2 h3 h4 h5 h6 paragraph line item list-item;
+}
+.wp-block-markdeep-block-markdeep-block .block-editor-plain-text {
+  font-family: monospace;
+}
+
+/**
+ * The following was generated from running markdeep.stylesheet().
+ *
+ * With the caveat that everything below `.wp-block-markdeep-block-markdeep-block > div {`
+ * was actually a top-level component that I nested.
+ */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    text-shadow: none !important;
+  }
+}
+@page {
+  margin: 0;
+  size: auto;
+}
+.wp-block-markdeep-block-markdeep-block > div #mdContextMenu {
+  position: absolute;
+  background: #383838;
+  cursor: default;
+  border: 1px solid #999;
+  color: #fff;
+  padding: 4px 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 85%;
+  font-weight: 600;
+  border-radius: 4px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+}
+.wp-block-markdeep-block-markdeep-block > div #mdContextMenu div {
+  padding: 0px 20px;
+}
+.wp-block-markdeep-block-markdeep-block > div #mdContextMenu div:hover {
+  background: #1659d1;
+}
+.wp-block-markdeep-block-markdeep-block > div .md code,
+.wp-block-markdeep-block-markdeep-block > div .md pre {
+  font-family: Menlo, Consolas, monospace;
+  font-size: 85%;
+  text-align: left;
+  line-height: 140%;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .mediumToc code,
+.wp-block-markdeep-block-markdeep-block > div .md longToc code,
+.wp-block-markdeep-block-markdeep-block > div .md .shortToc code,
+.wp-block-markdeep-block-markdeep-block > div .md h1 code,
+.wp-block-markdeep-block-markdeep-block > div .md h2 code,
+.wp-block-markdeep-block-markdeep-block > div .md h3 code,
+.wp-block-markdeep-block-markdeep-block > div .md h4 code,
+.wp-block-markdeep-block-markdeep-block > div .md h5 code,
+.wp-block-markdeep-block-markdeep-block > div .md h6 code {
+  font-size: unset;
+}
+.wp-block-markdeep-block-markdeep-block > div .md div.title {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 120%;
+  text-align: center;
+}
+.wp-block-markdeep-block-markdeep-block > div .md div.afterTitles {
+  height: 10px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md div.subtitle {
+  text-align: center;
+}
+.wp-block-markdeep-block-markdeep-block > div .md iframe.textinsert,
+.wp-block-markdeep-block-markdeep-block > div .md object.textinsert,
+.wp-block-markdeep-block-markdeep-block > div .md iframe:not(.markdeep) {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 75vh;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background: #f5f5f4;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .image {
+  display: inline-block;
+}
+.wp-block-markdeep-block-markdeep-block > div .md img {
+  max-width: 100%;
+  page-break-inside: avoid;
+}
+.wp-block-markdeep-block-markdeep-block > div .md li {
+  text-align: left;
+  text-indent: 0;
+}
+.wp-block-markdeep-block-markdeep-block > div .md pre.listing {
+  width: 100%;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  counter-reset: line;
+  overflow-x: auto;
+  resize: horizontal;
+}
+.wp-block-markdeep-block-markdeep-block > div .md pre.listing .linenumbers span.line:before {
+  width: 30px;
+  margin-left: -28px;
+  font-size: 80%;
+  text-align: right;
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  padding-right: 13px;
+  margin-right: 8px;
+  color: #ccc;
+}
+.wp-block-markdeep-block-markdeep-block > div .md div.tilde {
+  margin: 20px 0 -10px;
+  text-align: center;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .imagecaption,
+.wp-block-markdeep-block-markdeep-block > div .md .tablecaption,
+.wp-block-markdeep-block-markdeep-block > div .md .listingcaption {
+  display: inline-block;
+  margin: 7px 5px 12px;
+  text-align: justify;
+  font-style: italic;
+}
+.wp-block-markdeep-block-markdeep-block > div .md img.pixel {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: pixelated;
+}
+.wp-block-markdeep-block-markdeep-block > div .md blockquote.fancyquote {
+  margin: 25px 0 25px;
+  text-align: left;
+  line-height: 160%;
+}
+.wp-block-markdeep-block-markdeep-block > div .md blockquote.fancyquote::before {
+  content: "“";
+  color: #ddd;
+  font-family: Times New Roman;
+  font-size: 45px;
+  line-height: 0;
+  margin-right: 6px;
+  vertical-align: -0.3em;
+}
+.wp-block-markdeep-block-markdeep-block > div .md span.fancyquote {
+  font-size: 118%;
+  color: #777;
+  font-style: italic;
+}
+.wp-block-markdeep-block-markdeep-block > div .md span.fancyquote::after {
+  content: "”";
+  font-style: normal;
+  color: #ddd;
+  font-family: Times New Roman;
+  font-size: 45px;
+  line-height: 0;
+  margin-left: 6px;
+  vertical-align: -0.3em;
+}
+.wp-block-markdeep-block-markdeep-block > div .md blockquote.fancyquote .author {
+  width: 100%;
+  margin-top: 10px;
+  display: inline-block;
+  text-align: right;
+}
+.wp-block-markdeep-block-markdeep-block > div .md small {
+  font-size: 60%;
+}
+.wp-block-markdeep-block-markdeep-block > div .md big {
+  font-size: 150%;
+}
+.wp-block-markdeep-block-markdeep-block > div .md div.title,
+.wp-block-markdeep-block-markdeep-block > div contents,
+.wp-block-markdeep-block-markdeep-block > div .md .tocHeader,
+.wp-block-markdeep-block-markdeep-block > div .md h1,
+.wp-block-markdeep-block-markdeep-block > div .md h2,
+.wp-block-markdeep-block-markdeep-block > div .md h3,
+.wp-block-markdeep-block-markdeep-block > div .md h4,
+.wp-block-markdeep-block-markdeep-block > div .md h5,
+.wp-block-markdeep-block-markdeep-block > div .md h6,
+.wp-block-markdeep-block-markdeep-block > div .md .shortTOC,
+.wp-block-markdeep-block-markdeep-block > div .md .mediumTOC,
+.wp-block-markdeep-block-markdeep-block > div .nonumberh1,
+.wp-block-markdeep-block-markdeep-block > div .nonumberh2,
+.wp-block-markdeep-block-markdeep-block > div .nonumberh3,
+.wp-block-markdeep-block-markdeep-block > div .nonumberh4,
+.wp-block-markdeep-block-markdeep-block > div .nonumberh5,
+.wp-block-markdeep-block-markdeep-block > div .nonumberh6 {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  margin: 13.4px 0 13.4px;
+  padding: 15px 0 3px;
+  border-top: none;
+  clear: both;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .tocTop {
+  display: none;
+}
+.wp-block-markdeep-block-markdeep-block > div .md h1,
+.wp-block-markdeep-block-markdeep-block > div .md h2,
+.wp-block-markdeep-block-markdeep-block > div .md h3,
+.wp-block-markdeep-block-markdeep-block > div .md h4,
+.wp-block-markdeep-block-markdeep-block > div .md h5,
+.wp-block-markdeep-block-markdeep-block > div .md h6,
+.wp-block-markdeep-block-markdeep-block > div .md .nonumberh1,
+.wp-block-markdeep-block-markdeep-block > div .md .nonumberh2,
+.wp-block-markdeep-block-markdeep-block > div .md .nonumberh3,
+.wp-block-markdeep-block-markdeep-block > div .md .nonumberh4,
+.wp-block-markdeep-block-markdeep-block > div .md .nonumberh5,
+.wp-block-markdeep-block-markdeep-block > div .md .nonumberh6 {
+  page-break-after: avoid;
+  -moz-column-break-after: avoid;
+       break-after: avoid;
+}
+.wp-block-markdeep-block-markdeep-block > div .md svg.diagram {
+  display: block;
+  font-family: Menlo, Consolas, monospace;
+  font-size: 85%;
+  text-align: center;
+  stroke-linecap: round;
+  stroke-width: 2px;
+  page-break-inside: avoid;
+  stroke: #000;
+  fill: #000;
+}
+.wp-block-markdeep-block-markdeep-block > div .md svg.diagram .opendot {
+  fill: #fff;
+}
+.wp-block-markdeep-block-markdeep-block > div .md svg.diagram .shadeddot {
+  fill: #ccc;
+}
+.wp-block-markdeep-block-markdeep-block > div .md svg.diagram .dotteddot {
+  stroke: #000;
+  stroke-dasharray: 4;
+  fill: none;
+}
+.wp-block-markdeep-block-markdeep-block > div .md svg.diagram text {
+  stroke: none;
+}
+@media print {
+  @page {
+    .wp-block-markdeep-block-markdeep-block > div {
+      margin: 1in 5mm;
+      transform: scale(150%);
+    }
+  }
+}
+@media print {
+  .wp-block-markdeep-block-markdeep-block > div .md .pagebreak {
+    page-break-after: always;
+    visibility: hidden;
+  }
+}
+.wp-block-markdeep-block-markdeep-block > div .md a {
+  font-family: Georgia, Palatino, "Times New Roman";
+}
+.wp-block-markdeep-block-markdeep-block > div .md h1,
+.wp-block-markdeep-block-markdeep-block > div .md .tocHeader,
+.wp-block-markdeep-block-markdeep-block > div .md .nonumberh1 {
+  border-bottom: 3px solid;
+  font-size: 20px;
+  font-weight: bold;
+}
+.wp-block-markdeep-block-markdeep-block > div .md h1,
+.wp-block-markdeep-block-markdeep-block > div .md .nonumberh1 {
+  counter-reset: h2 h3 h4 h5 h6;
+}
+.wp-block-markdeep-block-markdeep-block > div .md h2,
+.wp-block-markdeep-block-markdeep-block > div .md .nonumberh2 {
+  counter-reset: h3 h4 h5 h6;
+  border-bottom: 2px solid #999;
+  color: #555;
+  font-weight: bold;
+  font-size: 18px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md h3,
+.wp-block-markdeep-block-markdeep-block > div .md h4,
+.wp-block-markdeep-block-markdeep-block > div .md h5,
+.wp-block-markdeep-block-markdeep-block > div .md h6,
+.wp-block-markdeep-block-markdeep-block > div .md .nonumberh3,
+.wp-block-markdeep-block-markdeep-block > div .md .nonumberh4,
+.wp-block-markdeep-block-markdeep-block > div .md .nonumberh5,
+.wp-block-markdeep-block-markdeep-block > div .md .nonumberh6 {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  color: #555;
+  font-size: 16px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md h3 {
+  counter-reset: h4 h5 h6;
+}
+.wp-block-markdeep-block-markdeep-block > div .md h4 {
+  counter-reset: h5 h6;
+}
+.wp-block-markdeep-block-markdeep-block > div .md h5 {
+  counter-reset: h6;
+}
+.wp-block-markdeep-block-markdeep-block > div .md div.table {
+  margin: 16px 0 16px 0;
+}
+.wp-block-markdeep-block-markdeep-block > div .md table {
+  border-collapse: collapse;
+  line-height: 140%;
+  page-break-inside: avoid;
+}
+.wp-block-markdeep-block-markdeep-block > div .md table.table {
+  margin: auto;
+}
+.wp-block-markdeep-block-markdeep-block > div .md table.calendar {
+  width: 100%;
+  margin: auto;
+  font-size: 11px;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+.wp-block-markdeep-block-markdeep-block > div .md table.calendar th {
+  font-size: 16px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .today {
+  background: #ecf8fa;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .calendar .parenthesized {
+  color: #999;
+  font-style: italic;
+}
+.wp-block-markdeep-block-markdeep-block > div .md table.table th {
+  color: #fff;
+  background-color: #aaa;
+  border: 1px solid #888;
+  padding: 8px 15px 8px 15px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md table.table td {
+  padding: 5px 15px 5px 15px;
+  border: 1px solid #888;
+}
+.wp-block-markdeep-block-markdeep-block > div .md table.table tr:nth-child(even) {
+  background: #eee;
+}
+.wp-block-markdeep-block-markdeep-block > div .md pre.tilde {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0 5px 20px;
+  margin: 0 0 0 0;
+  background: #fcfcfc;
+  page-break-inside: avoid;
+}
+.wp-block-markdeep-block-markdeep-block > div .md a.target {
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+  font-size: 0px;
+  display: inline-block;
+}
+.wp-block-markdeep-block-markdeep-block > div .md a:link,
+.wp-block-markdeep-block-markdeep-block > div .md a:visited {
+  color: #38a;
+  text-decoration: none;
+}
+.wp-block-markdeep-block-markdeep-block > div .md a:link:hover {
+  text-decoration: underline;
+}
+.wp-block-markdeep-block-markdeep-block > div .md dt {
+  font-weight: 700;
+}
+.wp-block-markdeep-block-markdeep-block > div .md dl > dd {
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md dl > table {
+  margin: 35px 0 30px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md code {
+  page-break-inside: avoid;
+}
+@media print {
+  .wp-block-markdeep-block-markdeep-block > div .md .listing code {
+    white-space: pre-wrap;
+  }
+}
+.wp-block-markdeep-block-markdeep-block > div .md .endnote {
+  font-size: 13px;
+  line-height: 15px;
+  padding-left: 10px;
+  text-indent: -10px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .bib {
+  padding-left: 80px;
+  text-indent: -80px;
+  text-align: left;
+}
+.wp-block-markdeep-block-markdeep-block > div .markdeepFooter {
+  font-size: 9px;
+  text-align: right;
+  padding-top: 80px;
+  color: #999;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .mediumTOC {
+  float: right;
+  font-size: 12px;
+  line-height: 15px;
+  border-left: 1px solid #ccc;
+  padding-left: 15px;
+  margin: 15px 0px 15px 25px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .mediumTOC .level1 {
+  font-weight: 600;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .longTOC .level1 {
+  font-weight: 600;
+  display: block;
+  padding-top: 12px;
+  margin: 0 0 -20px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .shortTOC {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .admonition {
+  position: relative;
+  margin: 1em 0;
+  padding: 0.4rem 1rem;
+  border-radius: 0.2rem;
+  border-left: 2.5rem solid rgba(68, 138, 255, 0.4);
+  background-color: rgba(68, 138, 255, 0.15);
+}
+.wp-block-markdeep-block-markdeep-block > div .md .admonition-title {
+  font-weight: bold;
+  border-bottom: solid 1px rgba(68, 138, 255, 0.4);
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+  margin-left: -1rem;
+  padding-left: 1rem;
+  margin-right: -1rem;
+  border-color: rgba(68, 138, 255, 0.4);
+}
+.wp-block-markdeep-block-markdeep-block > div .md .admonition.tip {
+  border-left: 2.5rem solid rgba(50, 255, 90, 0.4);
+  background-color: rgba(50, 255, 90, 0.15);
+}
+.wp-block-markdeep-block-markdeep-block > div .md .admonition.tip::before {
+  content: "ⓘ";
+  font-weight: bold;
+  font-size: 200%;
+  position: relative;
+  top: 3px;
+  color: rgba(26, 128, 46, 0.8);
+  left: -2.95rem;
+  display: block;
+  width: 0;
+  height: 0;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .admonition.tip > .admonition-title {
+  border-color: rgba(50, 255, 90, 0.4);
+}
+.wp-block-markdeep-block-markdeep-block > div .md .admonition.warn,
+.wp-block-markdeep-block-markdeep-block > div .md .admonition.warning {
+  border-left: 2.5rem solid rgba(255, 145, 0, 0.4);
+  background-color: rgba(255, 145, 0, 0.15);
+}
+.wp-block-markdeep-block-markdeep-block > div .md .admonition.warn::before,
+.wp-block-markdeep-block-markdeep-block > div .md .admonition.warning::before {
+  content: "⚠";
+  font-weight: bold;
+  position: relative;
+  top: 2px;
+  color: rgba(128, 73, 0, 0.8);
+  left: -2.95rem;
+  display: block;
+  width: 0;
+  height: 0;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .admonition.warn > .admonition-title,
+.wp-block-markdeep-block-markdeep-block > div .md .admonition.warning > .admonition-title {
+  border-color: rgba(255, 145, 0, 0.4);
+}
+.wp-block-markdeep-block-markdeep-block > div .md .admonition.error {
+  border-left: 2.5rem solid rgba(255, 23, 68, 0.4);
+  background-color: rgba(255, 23, 68, 0.15);
+}
+.wp-block-markdeep-block-markdeep-block > div .md .admonition.error > .admonition-title {
+  border-color: rgba(255, 23, 68, 0.4);
+}
+.wp-block-markdeep-block-markdeep-block > div .md .admonition.error::before {
+  content: "☒";
+  font-family: "Arial";
+  font-size: 150%;
+  position: relative;
+  color: rgba(128, 12, 34, 0.8);
+  top: -2px;
+  left: -3rem;
+  display: block;
+  width: 0;
+  height: 0;
+}
+.wp-block-markdeep-block-markdeep-block > div .md .admonition p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-markdeep-block-markdeep-block > div .md li.checked,
+.wp-block-markdeep-block-markdeep-block > div .md li.unchecked {
+  list-style: none;
+  overflow: visible;
+  text-indent: -1.2em;
+}
+.wp-block-markdeep-block-markdeep-block > div .md li.checked:before,
+.wp-block-markdeep-block-markdeep-block > div .md li.unchecked:before {
+  content: "☑";
+  display: block;
+  float: left;
+  width: 1em;
+  font-size: 120%;
+}
+.wp-block-markdeep-block-markdeep-block > div .md li.unchecked:before {
+  content: "☐";
+}
+.wp-block-markdeep-block-markdeep-block > div .md h1::before {
+  content: counter(h1) " ";
+  counter-increment: h1;
+  margin-right: 10px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md h2::before {
+  content: counter(h1) "." counter(h2) " ";
+  counter-increment: h2;
+  margin-right: 10px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md h3::before {
+  content: counter(h1) "." counter(h2) "." counter(h3) " ";
+  counter-increment: h3;
+  margin-right: 10px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md h4::before {
+  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) " ";
+  counter-increment: h4;
+  margin-right: 10px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md h5::before {
+  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) " ";
+  counter-increment: h5;
+  margin-right: 10px;
+}
+.wp-block-markdeep-block-markdeep-block > div .md h6::before {
+  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) " ";
+  counter-increment: h6;
+  margin-right: 10px;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: none;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-comment {
+  color: #006a00;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-keyword {
+  color: #02e;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-literal,
+.wp-block-markdeep-block-markdeep-block > div .nginx .hljs-title {
+  color: #aa0d91;
+}
+.wp-block-markdeep-block-markdeep-block > div .method,
+.wp-block-markdeep-block-markdeep-block > div .hljs-list .hljs-title,
+.wp-block-markdeep-block-markdeep-block > div .hljs-tag .hljs-title,
+.wp-block-markdeep-block-markdeep-block > div .setting .hljs-value,
+.wp-block-markdeep-block-markdeep-block > div .hljs-winutils,
+.wp-block-markdeep-block-markdeep-block > div .tex .hljs-command,
+.wp-block-markdeep-block-markdeep-block > div .http .hljs-title,
+.wp-block-markdeep-block-markdeep-block > div .hljs-request,
+.wp-block-markdeep-block-markdeep-block > div .hljs-status,
+.wp-block-markdeep-block-markdeep-block > div .hljs-name {
+  color: #008;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-envvar,
+.wp-block-markdeep-block-markdeep-block > div .tex .hljs-special {
+  color: #660;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-string {
+  color: #c41a16;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-tag .hljs-value,
+.wp-block-markdeep-block-markdeep-block > div .hljs-cdata,
+.wp-block-markdeep-block-markdeep-block > div .hljs-filter .hljs-argument,
+.wp-block-markdeep-block-markdeep-block > div .hljs-attr_selector,
+.wp-block-markdeep-block-markdeep-block > div .apache .hljs-cbracket,
+.wp-block-markdeep-block-markdeep-block > div .hljs-date,
+.wp-block-markdeep-block-markdeep-block > div .hljs-regexp {
+  color: #080;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-sub .hljs-identifier,
+.wp-block-markdeep-block-markdeep-block > div .hljs-pi,
+.wp-block-markdeep-block-markdeep-block > div .hljs-tag,
+.wp-block-markdeep-block-markdeep-block > div .hljs-tag .hljs-keyword,
+.wp-block-markdeep-block-markdeep-block > div .hljs-decorator,
+.wp-block-markdeep-block-markdeep-block > div .ini .hljs-title,
+.wp-block-markdeep-block-markdeep-block > div .hljs-shebang,
+.wp-block-markdeep-block-markdeep-block > div .hljs-prompt,
+.wp-block-markdeep-block-markdeep-block > div .hljs-hexcolor,
+.wp-block-markdeep-block-markdeep-block > div .hljs-rule .hljs-value,
+.wp-block-markdeep-block-markdeep-block > div .hljs-symbol,
+.wp-block-markdeep-block-markdeep-block > div .hljs-symbol .hljs-string,
+.wp-block-markdeep-block-markdeep-block > div .hljs-number,
+.wp-block-markdeep-block-markdeep-block > div .css .hljs-function,
+.wp-block-markdeep-block-markdeep-block > div .hljs-function .hljs-title,
+.wp-block-markdeep-block-markdeep-block > div .coffeescript .hljs-attribute {
+  color: #a0c;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-function .hljs-title {
+  font-weight: bold;
+  color: #000;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-class .hljs-title,
+.wp-block-markdeep-block-markdeep-block > div .smalltalk .hljs-class,
+.wp-block-markdeep-block-markdeep-block > div .hljs-type,
+.wp-block-markdeep-block-markdeep-block > div .hljs-typename,
+.wp-block-markdeep-block-markdeep-block > div .hljs-tag .hljs-attribute,
+.wp-block-markdeep-block-markdeep-block > div .hljs-doctype,
+.wp-block-markdeep-block-markdeep-block > div .hljs-class .hljs-id,
+.wp-block-markdeep-block-markdeep-block > div .hljs-built_in,
+.wp-block-markdeep-block-markdeep-block > div .setting,
+.wp-block-markdeep-block-markdeep-block > div .hljs-params,
+.wp-block-markdeep-block-markdeep-block > div .clojure .hljs-attribute {
+  color: #5c2699;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-variable {
+  color: #3f6e74;
+}
+.wp-block-markdeep-block-markdeep-block > div .css .hljs-tag,
+.wp-block-markdeep-block-markdeep-block > div .hljs-rule .hljs-property,
+.wp-block-markdeep-block-markdeep-block > div .hljs-pseudo,
+.wp-block-markdeep-block-markdeep-block > div .hljs-subst {
+  color: #000;
+}
+.wp-block-markdeep-block-markdeep-block > div .css .hljs-class,
+.wp-block-markdeep-block-markdeep-block > div .css .hljs-id {
+  color: #9b703f;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-value .hljs-important {
+  color: #ff7700;
+  font-weight: bold;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-rule .hljs-keyword {
+  color: #c5af75;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-annotation,
+.wp-block-markdeep-block-markdeep-block > div .apache .hljs-sqbracket,
+.wp-block-markdeep-block-markdeep-block > div .nginx .hljs-built_in {
+  color: #9b859d;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-preprocessor,
+.wp-block-markdeep-block-markdeep-block > div .hljs-preprocessor *,
+.wp-block-markdeep-block-markdeep-block > div .hljs-pragma {
+  color: #643820;
+}
+.wp-block-markdeep-block-markdeep-block > div .tex .hljs-formula {
+  background-color: #eee;
+  font-style: italic;
+}
+.wp-block-markdeep-block-markdeep-block > div .diff .hljs-header,
+.wp-block-markdeep-block-markdeep-block > div .hljs-chunk {
+  color: #808080;
+  font-weight: bold;
+}
+.wp-block-markdeep-block-markdeep-block > div .diff .hljs-change {
+  background-color: #bccff9;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-addition {
+  background-color: #baeeba;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-deletion {
+  background-color: #ffc8bd;
+}
+.wp-block-markdeep-block-markdeep-block > div .hljs-comment .hljs-doctag {
+  font-weight: bold;
+}
+.wp-block-markdeep-block-markdeep-block > div .method .hljs-id {
+  color: #000;
+}
+
+/*# sourceMappingURL=index.css.map*/

@@ -52,8 +52,10 @@ add_filter( 'markdeepblock_mathjax_url', fn($u) => 'https://cdn.jsdelivr.net/npm
 
 * UI to configure CDN for JS resources (Markdeep, MathJax).
 * Configurable style per block.
+* Drop-down style selection of styles (globally & per-block).
 * Get MathJax commands working in editor. _(MathJax currently works in posts)._
-* Markdeep specific LaTeX/MathJax commands. (e.g. θ₀, θ₁, etc.)
+* Markdeep specific LaTeX/MathJax macros. (e.g. θ₀, θ₁, etc.)
+* Configurable MathJax macros.
 * Optional Table of Contents (currently suppressed)
 
 ### Logo
