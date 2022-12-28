@@ -5,7 +5,7 @@
  * Description:       Markdeep Block is a WordPress plugin for adding Gutenberg blocks supporting <a href="http://casual-effects.com/markdeep">Markdeep</a> syntax.
  * Requires at least: 5.9
  * Requires PHP:      7.0
- * Version:           0.0.1
+ * Version:           0.0.2
  * Author:            neffff
  * Author URI:        https://n3f.com
  * License:           GPL-2.0-or-later
@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 class MarkdeepBlock {
-	const MARKDEEP_VERSION = '1.14';
+	const MARKDEEP_VERSION = '1.15';
 	// The markdeep source says: "The following option forces better rendering on some browsers, but
 	// also makes it impossible to copy-paste text with inline equations:
 	const MATHJAX_URL = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
@@ -52,7 +52,7 @@ class MarkdeepBlock {
 	/**
 	 * Inline script loads & runs before markdeep.  Put configurable/PHP/variable changes here.
 	 */
-	function markdeepblock_inline_script() {
+	public static function markdeepblock_inline_script() {
 		$_mathjax_url = apply_filters( 'markdeepblock_mathjax_url', self::MATHJAX_URL );
 		return <<<"EOF"
 		window.MDPB_MATHJAX_URL='{$_mathjax_url}';

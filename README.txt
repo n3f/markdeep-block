@@ -4,7 +4,7 @@ Tags:              markdown, markdeep, diagrams, graphics, mathjax, latex, block
 Requires at least: 5.0
 Requires PHP:      7.0
 Tested up to:      6.0
-Stable tag:        0.0.1
+Stable tag:        0.0.2
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -86,10 +86,10 @@ examples.
 
 == Changelog ==
 
-= 0.0.1 =
-* Release
+= 0.0.2 =
+* Update to markdeep 1.15
 
 == Upgrade Notice ==
 
-= 0.0.1 =
-Initial install.  Don't know how you would be upgrading yet. 😉
+= 0.0.2 =
+Update markdeep to 1.15
